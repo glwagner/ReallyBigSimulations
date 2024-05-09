@@ -1,6 +1,6 @@
 # ReallyBigSimulations
 
-Demonstrates how to use a LocalPreferences.toml (in particular, to use CUDA's unified memory for really big simulations with Oceananigans).
+Demonstrates how to use a [`LocalPreferences.toml`](https://juliapackaging.github.io/Preferences.jl/stable/) (in particular, to use [CUDA's unified memory](https://cuda.juliagpu.org/stable/usage/memory/#Unified-memory) for really big simulations with [Oceananigans](https://github.com/CliMA/Oceananigans.jl)).
 
 Try it by cloning this package (on a machine that has access to a GPU) and then writing
 
