@@ -23,7 +23,7 @@ https://github.com/glwagner/ReallyBigSimulations/blob/08a091e4287f915d38b0c6fc47
 
 to 
 
-```julia
+```
  [CUDA] 
  default_memory = "unified" 
  #default_memory = "device"
@@ -31,7 +31,6 @@ to
 
 (You can also delete the line that is commented out.) Re-running our big script then produces
 
-```
 ```
 ReallyBigSimulation$ julia --project this_is_big.jl
 (parent(c)).data = GPUArrays.DataRef{CUDA.Mem.UnifiedBuffer}(GPUArrays.RefCounted{CUDA.Mem.UnifiedBuffer}(UnifiedBuffer(216 bytes at 0x00007f3c4a000000), CUDA._free_buffer, Base.Threads.Atomic{Int64}(1)), false)
