@@ -37,3 +37,9 @@ ReallyBigSimulation$ julia --project this_is_big.jl
 ```
 
 where we can see `CUDA.Mem.UnifiedBuffer` --- as we prefer!
+
+Note that for this to work, we have to include `CUDA` in our `Project.toml`:
+
+https://github.com/glwagner/ReallyBigSimulations/blob/2d99ab87161c26f8b99040bae105e7d13a5598b0/Project.toml#L1-L3
+
+even though it is not used in our script, `this_is_big.jl`. (More superfluous detail: if/when Oceananigans moves CUDA functionality to a package extension where it belongs, then `using CUDA` _will_ be required in scripts like `this_is_big.jl`.)
